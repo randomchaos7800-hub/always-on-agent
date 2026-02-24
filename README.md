@@ -675,3 +675,22 @@ The framework is the same for all of them: `runAgent(prompt, chatId, model)` →
 ---
 
 *Built on the Claude Agent SDK. The memory architecture is inspired by MemGPT's three-tier model. The MCP subprocess pattern is a workaround for a known SDK race condition (issue #148 — hopefully fixed upstream eventually).*
+
+---
+
+## This Repo vs. The Full Guide
+
+This repo is the working skeleton — the core loop, memory system, and REPL. It runs as-is.
+
+What it doesn't include:
+
+- **Discord integration** — the bot, message splitting, channel posting
+- **Scheduled jobs** — morning briefings, news digests, finance alerts, cron patterns
+- **systemd service** — boot-on-start, crash recovery, log to journald
+- **Semantic memory** — vector embeddings for archival search when FTS5 isn't enough
+- **Subagents** — email triage, calendar prep, delegating to cheaper models
+- **The pitfalls section** — six months of production gotchas documented so you don't have to find them yourself
+
+The full guide covers all of it: **[Build Your Own Always-On AI Agent →](https://dino.gumroad.com/l/always-on-agent)**
+
+$19.70. Includes the guide (PDF + Markdown) and lifetime updates as the SDK evolves.
