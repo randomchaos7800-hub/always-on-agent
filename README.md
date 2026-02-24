@@ -691,6 +691,6 @@ What it doesn't include:
 - **Subagents** — email triage, calendar prep, delegating to cheaper models
 - **The pitfalls section** — six months of production gotchas documented so you don't have to find them yourself
 
-The full guide covers all of it: **[Build Your Own Always-On AI Agent →](https://dino.gumroad.com/l/always-on-agent)**
+The full guide covers all of it: **[Build Your Own Always-On AI Agent →](https://dinovitale.gumroad.com/l/crjyh)**
 
 $19.70. Includes the guide (PDF + Markdown) and lifetime updates as the SDK evolves.
