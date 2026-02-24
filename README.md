@@ -24,6 +24,10 @@ This isn't a weekend demo. This is a production-grade system you actually use ev
 - A Discord server you admin (or Telegram bot token)
 - Basic TypeScript familiarity
 
+**Why TypeScript?** The Claude Agent SDK's production features — `query()` with session resumption, MCP server integration, `interrupt()` — are Node.js only. The Python `anthropic` package has tool use, but not the stateful agent loop this guide is built around. The agent core has to be TypeScript.
+
+That said, the *scripts your agent runs* can be anything. In production, most of the useful daily tasks (finance calculations, RSS parsing, data sync) are Python scripts called via the Bash tool. The agent is the glue — what it executes doesn't care what language it's written in.
+
 **Runtime cost:** ~$0–15/month if using Claude Max subscription. Less than a coffee.
 
 ---
@@ -641,7 +645,8 @@ Good starters:
 ## Final Stack
 
 ```
-Runtime:      Node.js v22+, TypeScript, tsx
+Agent core:   Node.js v22+, TypeScript, tsx
+Scripts:      Anything — Python, Bash, Go, whatever you want
 LLM:          Claude Sonnet 4.6 (interactive), Claude Haiku 4.5 (cron)
 Memory:       SQLite + WAL + FTS5 + optional vector embeddings
 Interface:    Discord (discord.js) or Telegram (telegraf)
