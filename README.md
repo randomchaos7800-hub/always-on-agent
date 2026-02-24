@@ -17,6 +17,26 @@ This isn't a weekend demo. This is a production-grade system you actually use ev
 
 ---
 
+## Why Build Instead of Using a Pre-Built Tool?
+
+Pre-built agent platforms (OpenClaw, various hosted services) are fine until they aren't. Here's why some people build their own instead:
+
+**Your memory is yours.** With a hosted tool, your conversations and memory live in their system in their format. Here, it's a SQLite file on your machine. Query it directly, back it up, migrate it, read it with any tool. You own it completely.
+
+**No abstraction layer.** Pre-built agents wrap the SDK behind their own opinions — you don't always know what's in the system prompt, how tools are called, or why the agent does what it does. Building your own means nothing is hidden.
+
+**No extra subscription.** Most pre-built platforms are a layer on top of your LLM costs. This stack's total cost is Claude Max + server electricity. Nothing else.
+
+**Wire in anything.** Your bank's API, your internal tools, your specific file structure. Pre-built tools support what they support. Your own agent supports whatever you build.
+
+**It doesn't disappear.** Hosted services get acquired, reprice, or shut down. Your systemd service runs until you turn it off.
+
+**Privacy.** Conversations, memory, finances — none of it touches a third-party server. It stays on your hardware.
+
+The point isn't that pre-built tools are bad. It's that if you want to truly own your agent, you have to build it.
+
+---
+
 ## Prerequisites
 
 - A Linux machine with Node.js v22+ (home server, VPS, Raspberry Pi — anything always-on)
