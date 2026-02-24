@@ -4,3 +4,6 @@ config.json
 workspace/
 *.pid
 .env
+always-on-agent-guide.md
+always-on-agent-guide.pdf
+always-on-agent-guide.zip
