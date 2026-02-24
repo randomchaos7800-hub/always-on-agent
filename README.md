@@ -714,7 +714,7 @@ What it doesn't include:
 - **systemd service** — boot-on-start, crash recovery, log to journald
 - **Semantic memory** — vector embeddings for archival search when FTS5 isn't enough
 - **Subagents** — email triage, calendar prep, delegating to cheaper models
-- **The pitfalls section** — six months of production gotchas documented so you don't have to find them yourself
+- **The pitfalls section** — months of production gotchas documented so you don't have to find them yourself
 
 The full guide covers all of it: **[Build Your Own Always-On AI Agent →](https://dinovitale.gumroad.com/l/crjyh)**
 
